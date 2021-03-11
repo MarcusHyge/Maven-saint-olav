@@ -6,6 +6,6 @@ public abstract class Doctor extends Employee {
 	}
 	
 	void setDiagnosis(Patient a, String b) {
-	this.
+	
 	}
 }

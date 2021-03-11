@@ -1,5 +1,5 @@
 
-public class Person {
+public abstract class Person {
 String firstName;
 String lastName;
 String socialSecurityNumber; 
@@ -31,7 +31,7 @@ public String getFirstName() {
 }
 
 public String getFullNavn() {
-	return this.firstName;
+	return this.firstName + this.lastName;
 }
 
 }
