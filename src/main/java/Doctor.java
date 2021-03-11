@@ -5,7 +5,6 @@ public abstract class Doctor extends Employee {
 		super(firstName, lastName, socialSecurityNumber);
 	}
 	
-	void setDiagnosis(Patient a, String b) {
-	
+	void setDiagnosis(Patient patient, String diagnosis) {
 	}
 }

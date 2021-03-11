@@ -1,6 +1,4 @@
 
 public interface Diagnosable {
-void setDiagnosis(String a) {
-	
-}
+void setDiagnosis(String diagnosis);
 }

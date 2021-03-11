@@ -5,13 +5,18 @@ String hospitalName = "";
 
 public Hospital(String hospitalName) {
 	this.hospitalName = hospitalName; 
-	ArrayList<String> Department = new ArrayList<String>();
 };
+
+String getHospitalName() {
+	return this.hospitalName;
+}
 
 public getDepartments()
 
 }
 
 void addDepartment() {
+
 	
 }
+

@@ -30,6 +30,10 @@ public String getFirstName() {
 	return this.firstName;
 }
 
+public String getLastName() {
+	return this.lastName;
+}
+
 public String getFullNavn() {
 	return this.firstName + this.lastName;
 }

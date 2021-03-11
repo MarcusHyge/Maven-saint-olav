@@ -1,5 +1,5 @@
 
-public class Patient extends Person {
+public class Patient extends Person implements Diagnosable {
 Patient(String firstName, String lastName, String socialSecurityNumber) {
 		super(firstName, lastName, socialSecurityNumber);
 	}
@@ -15,7 +15,8 @@ String toString(String a) {
 };
 
 
-void setDiagnosis(String diagnosis) {
-	this.diagnosis = diagnosis;
+void setDiagnose(String diagnosis) {
+
 }
+
 }
