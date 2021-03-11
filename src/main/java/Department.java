@@ -1,16 +1,12 @@
 import java.util.ArrayList;
 
-public class Department {
+public class Department throws RemoveExceptions{
 String departmentName = "";
 ArrayList<Employee> employeeList = new ArrayList<>();
 ArrayList<Patient> patientList = new ArrayList<>();
 
-
-
 public Department(String departmentName) {
 	this.departmentName = departmentName;
-	ArrayList<String> Department1 = new ArrayList<String>();
-	
 }
 
 void setDepartmentName(String departmentName) {
@@ -29,8 +25,32 @@ public ArrayList<Employee> getEmployees() {
     return employeeList;
 }
 
+void addPatient(Patient patient) {
+	patientList.add(patient); 
+}
 
-
-addPatient
+void remove(Person person) throws RemoveException {
+!if(person instanceof Patient || person instanceof Employee)
+	throw new RemoveExpection("No instance of this person is found in the registers")
+	
+	if (person instanceof Patient){
+        if (patientList.contains(person)){
+            patientList.remove(person);
+            }
+        else { throw new RemoveExpection("The patient does not contains "
+        		+ "in the patient registers and couldnt be removed")
+        	
+        }
+    
+    if (person instanceof Employee) {
+    	if (employeeList.contains(person)){
+            employeeList.remove(person);
+            }
+        else { throw new RemoveExpection("The employee does not contains "
+        		+ "in the employee registers and couldnt be removed")
+    }
+    }
+    
+    //TODO: Add a sucess message
 
 }
