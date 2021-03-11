@@ -1,6 +1,6 @@
 
 public class Patient extends Person implements Diagnosable {
-Patient(String firstName, String lastName, String socialSecurityNumber) {
+	Patient(String firstName, String lastName, String socialSecurityNumber) {
 		super(firstName, lastName, socialSecurityNumber);
 	}
 
@@ -10,13 +10,14 @@ String getDiagnose() {
 	return diagnosis;
 }
 
-String toString(String a) {
-	return a;
-};
-
-
-void setDiagnose(String diagnosis) {
-
+@Override
+public String toString() {
+    return "Diagnosis : " + diagnosis;
 }
 
+
+@Override
+public void setDiagnosis(String diagnosis) {
+	// TODO Auto-generated method stub
+	}
 }

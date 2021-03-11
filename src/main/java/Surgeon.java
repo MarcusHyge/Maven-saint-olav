@@ -1,5 +1,5 @@
 
-public class Surgeon {
+public class Surgeon extends Doctor {
 	
     Surgeon(String firstName, String lastName, String socialSecurityNumber) {
         super(firstName, lastName, socialSecurityNumber);

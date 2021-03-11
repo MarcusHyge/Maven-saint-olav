@@ -38,4 +38,19 @@ public String getFullNavn() {
 	return this.firstName + this.lastName;
 }
 
+@Override
+public String toString() {
+    return "Firstname : " + firstName + " " +
+    	   "Lastname : " + lastName + " " +
+    		"Social Security Number : " + socialSecurityNumber;
+}
+
+/*public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("First name : ").append(this.firstName).append("\n");
+        sb.append("Last name : ").append(this.lastName).append("\n");
+        sb.append("Social Security Number : ").append(this.socialSecurityNumber).append("\n");
+        return sb.toString();
+    }
+    */
 }

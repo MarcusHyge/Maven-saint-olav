@@ -5,8 +5,7 @@ public class Employee extends Person{
 		super(firstName, lastName, socialSecurityNumber);
 	}
 	
-	String toString(String a) {
-		return a; 
+	public String toString() {
+		 return super.toString();
 	}
-	
 }

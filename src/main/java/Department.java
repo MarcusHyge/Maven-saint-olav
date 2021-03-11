@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import RemoveException;
 
 public class Department{
 String departmentName = "";
@@ -30,8 +29,9 @@ void addPatient(Patient patient) {
 	patientList.add(patient); 
 }
 
+
 void remove(Person person) throws RemoveException {
-!if(person instanceof Patient || person instanceof Employee)
+if(!(person instanceof Patient || person instanceof Employee))
 	throw new RemoveException("No instance of this person is found in the registers");
 	
 	if (person instanceof Patient){
@@ -54,5 +54,11 @@ void remove(Person person) throws RemoveException {
     }
     
     //TODO: Add a success message
-
+}
+@Override
+public String toString() {
+    return "Department : " + departmentName + " " +
+            "Employees : " + employeeList + " " +
+            "Patients : " + patientList;
+}
 }

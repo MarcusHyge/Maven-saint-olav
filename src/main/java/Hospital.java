@@ -11,12 +11,12 @@ String getHospitalName() {
 	return this.hospitalName;
 }
 
-public getDepartments()
-
+public getDepartments() {
+	
 }
 
 void addDepartment() {
 
-	
+}
 }
 
